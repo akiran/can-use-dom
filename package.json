@@ -4,7 +4,7 @@
   "description": "Test if you can use dom in the current environment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha test.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/akiran/can-use-dom/issues"
   },
-  "homepage": "https://github.com/akiran/can-use-dom"
+  "homepage": "https://github.com/akiran/can-use-dom",
+  "devDependencies": {
+    "jsdom": "^3.1.0",
+    "mocha": "^2.1.0",
+    "should": "^4.6.3"
+  }
 }
